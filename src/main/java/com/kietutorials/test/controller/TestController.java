@@ -1,6 +1,7 @@
 package com.kietutorials.test.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -11,4 +12,8 @@ public class TestController {
         return "hello from kie tutorials!!!!";
     }
     
+    @PostMapping
+    public String testPostMapping(){
+        return "POST METHOD SUCCESS";
+    }
 }
